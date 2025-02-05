@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/aj211124/knotbook-wedding/static/css/main.5d2ef411.css",
+    "main.js": "/aj211124/knotbook-wedding/static/js/main.d0f5a3e2.js",
+    "static/js/488.09a55e3a.chunk.js": "/aj211124/knotbook-wedding/static/js/488.09a55e3a.chunk.js",
+    "static/media/slick.svg": "/aj211124/knotbook-wedding/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/aj211124/knotbook-wedding/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/aj211124/knotbook-wedding/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/aj211124/knotbook-wedding/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/aj211124/knotbook-wedding/index.html",
+    "main.5d2ef411.css.map": "/aj211124/knotbook-wedding/static/css/main.5d2ef411.css.map",
+    "main.d0f5a3e2.js.map": "/aj211124/knotbook-wedding/static/js/main.d0f5a3e2.js.map",
+    "488.09a55e3a.chunk.js.map": "/aj211124/knotbook-wedding/static/js/488.09a55e3a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d2ef411.css",
+    "static/js/main.d0f5a3e2.js"
+  ]
+}
