@@ -40,7 +40,8 @@
   "devDependencies": {
     "gh-pages": "^6.3.0"
   },
-  "homepage": "https://github.com/aj211124/knotbook-wedding",
+  "homepage": "https://github.com/aj211124.github.io/knotbook-wedding",
+
 "scripts": {
   "start": "react-scripts start",
   "build": "react-scripts build",
