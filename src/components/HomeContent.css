@@ -1,0 +1,97 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    max-width: 100%; /* Prevent horizontal overflow */
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 98px;
+    color: #100f0f;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.photo-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%; /* Prevent horizontal overflow */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.photographer-box {
+    background-color: #ddd;
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .photo-boxes {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .photographer-box {
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: contain;
+    }
+}

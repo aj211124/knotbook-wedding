@@ -1,0 +1,135 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.gallery {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the gallery fits within the viewport */
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 0; /* Remove the top white space */
+}
+
+.slider {
+    width: 100%;
+    max-width: 800px;
+    max-height: 90vh; /* Ensure the slider fits within the viewport */
+    position: relative; /* Position relative for preview images */
+}
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    padding-top: 177.78%; /* 9:16 aspect ratio */
+    overflow: hidden;
+}
+
+.gallery-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.slick-prev, .slick-next {
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    display: block !important; /* Ensure the arrows are displayed */
+    background: none !important; /* Remove the default background */
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    position: absolute; /* Ensure the arrows are positioned correctly */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slick-prev {
+    left: 13px; /* Position the left arrow */
+}
+
+.slick-next {
+    right: 13px; /* Position the right arrow */
+}
+
+.custom-arrow {
+    color: black;
+    font-size: 30px;
+}
+
+.slick-prev:before, .slick-next:before {
+    content: '';
+}
+
+/* Preview of the next and previous images */
+.slick-slide {
+    transition: transform 0.3s ease;
+}
+
+.slick-current + .slick-slide {
+    transform: scale(0.8); /* Scale down the next image */
+    transform-origin: right;
+}
+
+.slick-current ~ .slick-slide + .slick-slide {
+    transform: scale(0.8); /* Scale down the previous image */
+    transform-origin: left;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    html, body {
+        overflow: auto; /* Allow scrolling on small screens */
+    }
+
+    .gallery {
+        padding: 10px;
+        justify-content: flex-start;
+        min-height: auto; /* Adjust to avoid excessive white space */
+    }
+
+    .slider {
+        max-width: 100%;
+    }
+
+    .gallery-item {
+        padding-top: 177.78%; /* 9:16 aspect ratio */
+    }
+
+    .gallery-image {
+        border-radius: 0;
+    }
+
+    .slick-prev, .slick-next {
+        width: 20px; /* Adjust arrow size for small screens */
+        height: 20px;
+        font-size: 20px;
+    }
+
+    .slick-prev {
+        left: -25px; /* Adjust position for small screens */
+    }
+
+    .slick-next {
+        right: -25px; /* Adjust position for small screens */
+    }
+}

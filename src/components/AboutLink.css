@@ -1,0 +1,94 @@
+/* General Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.about {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-company, .about-photographer {
+  margin-bottom: 40px;
+}
+
+.logo-box {
+  width: 50%; /* Change width as needed */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.photographer-box {
+  width: 20%; /* Change width as needed */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.about-title {
+  font-size: 45px;
+}
+
+.photographer-details, .company-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.company-details .photo-box, .photographer-details .photo-box {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: 12px;
+}
+
+.company-details p, .photographer-details p {
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .photographer-details, .company-details {
+      flex-direction: column; /* Stack items vertically */
+  }
+
+  .logo-box, .photographer-box {
+      width: 100%; /* Full width on small screens */
+  }
+
+  .company-details p, .photographer-details p {
+      font-size: 20px; /* Smaller font size on small screens */
+  }
+
+  .about-title {
+      font-size: 30px; /* Smaller font size for titles on small screens */
+  }
+}
